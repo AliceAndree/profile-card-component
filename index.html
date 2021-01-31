@@ -5,31 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./normalize.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
   
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: hsl(229, 23%, 23%);}
+    .attribution a { color: hsl(0, 0%, 100%); }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <div class="container">
 
-  80K
-  Followers
+    <div class="info">
+      <img class="avatar" src="./images/image-victor.jpg">
+      
+      <ul class="inline">
+        <li>
+          <h3 class="username">Victor Crest</h3>
+        </li>
+        <li>
+          <h3 class="age">26</h3>
+        </li>
+      </ul>
+  
+      <h5 class="hometown">London</h5>
+    </div>
 
-  803K
-  Likes
+    <hr class="horizontal-line">
 
-  1.4K
-  Photos
+    <ul class="inline">
+      <li class="statistic">
+        <h3 class="amount">80K</h3>
+        <h6 class="tag">Followers</h6> 
+      </li>
+      <li class="statistic">
+        <h3 class="amount">803K</h3>
+        <h6 class="tag">Likes</h6>
+      </li>
+      <li class="statistic">
+        <h3 class="amount">1.4K</h3> 
+        <h6 class="tag">Photos</h6>
+      </li>
+    </ul>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Alice Andrée Thiel</a>.
   </div>
 </body>
 </html>
